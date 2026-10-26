@@ -135,6 +135,8 @@ npm start
 # lalu buka http://localhost:8000
 ```
 
+**Deploy ke Vercel:** impor repositori GitHub ini di Vercel dan gunakan folder root proyek. `vercel.json` mengatur situs sebagai berkas statis dan endpoint API sebagai Vercel Function.
+
 ## 9. Struktur berkas
 
 ```
