@@ -4,7 +4,7 @@
 
 **Kompetisi:** Web In Action, Multimedia In Action 2026
 **Subtema:** Open Government Data
-**Tim:** `[isi nama tim]` · `[isi nama anggota dan peran]`
+**Tim:** `Pedede` · `Mukhamad Badrus Sholeh, Rezky Mufidah Hidayat, dan Fika Qurrata 'Ayuni`
 **Status:** Prototipe fungsional; berjalan lokal dengan Node.js.
 
 ---
@@ -187,4 +187,4 @@ npm start
 
 ## 13. Lisensi dan atribusi
 
-Data bersumber dari Simkopdes. Kode dan desain dibuat oleh tim `[isi nama tim]` untuk Web In Action, Multimedia In Action 2026.
+Data bersumber dari Simkopdes. Kode dan desain dibuat oleh tim `Pedede` untuk Web In Action, Multimedia In Action 2026.
