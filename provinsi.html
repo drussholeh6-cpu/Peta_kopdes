@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Provinsi | Peta Kopdes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-halaman="provinsi">
+<header class="atas"><div class="wrap">
+<a class="merek" href="index.html">Peta <b>Kopdes</b></a>
+<nav aria-label="Menu utama"><a data-h="beranda" href="index.html">Beranda</a><a data-h="data" href="data.html">Peringkat dan data</a><a data-h="bandingkan" href="bandingkan.html">Bandingkan</a><a data-h="glosarium" href="glosarium.html">Panduan dan istilah</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero">
+<h1 id="judul">Memuat…</h1>
+<div id="kalimat" class="lead"></div>
+<div class="pilih"><div><label for="pilih">Ganti provinsi</label><select id="pilih"></select></div>
+<a id="bandingkan" class="tombol polos" href="bandingkan.html">Bandingkan dengan provinsi lain</a></div>
+<div id="angka" class="angka-besar"></div>
+</section>
+<section>
+<h2>Posisi di tiap tahap</h2>
+<p class="kunci"><span><b style="background:var(--merah)"></b>Provinsi ini</span><span><b style="background:var(--tinta);width:2px"></b>Rata-rata nasional</span></p>
+<div id="tahap"></div>
+<p class="redup" style="margin-top:1rem">Bingung dengan istilahnya? Baca <a href="glosarium.html">panduan dan istilah</a>.</p>
+</section>
+</main>
+<footer><div class="wrap">
+<p>Sumber data: <a href="https://simkopdes.go.id/pers/dashboard">Simkopdes</a>, diolah ulang untuk tampilan ini. Bukan publikasi resmi pemerintah.</p>
+<p>Peta Kopdes, Web In Action 2026, subtema Open Government Data.</p>
+</div></footer>
+<script src="app.js"></script>
+</body>
+</html>

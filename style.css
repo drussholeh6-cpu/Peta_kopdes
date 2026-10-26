@@ -1,0 +1,94 @@
+:root{
+  --kertas:#ffffff; --latar:#f1f3f6; --tinta:#1b2230; --redup:#5b6577; --garis:#d5dae2;
+  --merah:#b3202a; --merah-muda:#f6dcde; --biru:#2f4a6d;
+  --lebar:68rem;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:1.0625rem/1.6 "Bricolage Grotesque",system-ui,sans-serif;color:var(--tinta);background:var(--kertas)}
+a{color:var(--merah);text-underline-offset:.2em}
+a:hover{color:var(--tinta)}
+:focus-visible{outline:3px solid var(--biru);outline-offset:2px}
+.wrap{max-width:var(--lebar);margin:0 auto;padding:0 1.25rem}
+
+header.atas{border-bottom:1px solid var(--garis)}
+header.atas .wrap{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.5rem 2rem;padding-top:1rem;padding-bottom:1rem}
+.merek{font-weight:800;font-size:1.25rem;text-decoration:none;color:var(--tinta);letter-spacing:-.01em}
+.merek b{color:var(--merah)}
+nav a{margin-right:1.25rem;color:var(--redup);text-decoration:none;font-weight:500}
+nav a:last-child{margin-right:0}
+nav a[aria-current]{color:var(--tinta);box-shadow:0 2px 0 var(--merah)}
+nav a:hover{color:var(--tinta)}
+
+h1{font-size:clamp(2.25rem,6vw,4rem);line-height:1.05;letter-spacing:-.03em;margin:0 0 1rem;font-weight:800;max-width:16ch}
+h2{font-size:1.6rem;line-height:1.2;letter-spacing:-.02em;margin:0 0 .75rem}
+h3{font-size:1.1rem;margin:0 0 .25rem}
+p{margin:0 0 1rem;max-width:62ch}
+.redup{color:var(--redup)}
+section{padding:2.5rem 0}
+.hero{padding:3.5rem 0 2.5rem}
+.hero .lead{font-size:1.25rem;color:var(--redup)}
+
+.pilih{display:flex;flex-wrap:wrap;gap:.75rem;align-items:end;margin-top:1.5rem}
+.pilih label{display:block;font-weight:600;margin-bottom:.25rem;font-size:.95rem}
+select,button,.tombol{font:inherit;padding:.65rem .9rem;border:1.5px solid var(--tinta);background:var(--kertas);color:var(--tinta);border-radius:6px;min-height:2.75rem}
+select{min-width:16rem}
+button,.tombol{background:var(--merah);border-color:var(--merah);color:#fff;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
+button:hover,.tombol:hover{background:var(--tinta);border-color:var(--tinta);color:#fff}
+.tombol.polos{background:var(--kertas);color:var(--tinta);border-color:var(--tinta)}
+.tombol.polos:hover{background:var(--tinta);color:#fff}
+
+.latar{background:var(--latar)}
+.tahap{list-style:none;margin:1.5rem 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:1rem;counter-reset:t}
+.tahap li{counter-increment:t;border-top:3px solid var(--biru);padding-top:.75rem}
+.tahap li::before{content:counter(t);font-weight:800;color:var(--merah);margin-right:.4rem}
+.tahap strong{display:inline}
+.tahap span{display:block;color:var(--redup);font-size:.95rem}
+
+.daftar-temuan{margin-top:1rem}
+.temuan{display:grid;grid-template-columns:minmax(10rem,1fr) 2fr;gap:.5rem 2rem;padding:1rem 0;border-top:1px solid var(--garis)}
+.temuan:last-child{border-bottom:1px solid var(--garis)}
+.temuan p{margin:0}
+@media(max-width:40rem){.temuan{grid-template-columns:1fr}}
+
+.baris{display:grid;grid-template-columns:minmax(9rem,14rem) 1fr 5.5rem;gap:.5rem 1rem;align-items:center;padding:.6rem 0;border-top:1px solid var(--garis)}
+.baris .nama{font-weight:500}
+.baris .angka{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.bar{position:relative;height:1.1rem;background:var(--latar);border-radius:2px}
+.bar span{position:absolute;inset:0 auto 0 0;background:var(--biru);border-radius:2px;transition:width .5s ease}
+.bar span.b{background:var(--merah)}
+.bar i{position:absolute;top:-.3rem;bottom:-.3rem;width:2px;background:var(--tinta)}
+.bar.ganda{height:.8rem;margin-bottom:.25rem}
+.kunci{font-size:.95rem;color:var(--redup);display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;margin:.5rem 0 1rem}
+.kunci b{display:inline-block;width:.8rem;height:.8rem;border-radius:2px;vertical-align:-.1rem;margin-right:.35rem}
+.peringkat .baris{grid-template-columns:2rem minmax(8rem,13rem) 1fr 5rem}
+.peringkat .baris a{color:inherit;text-decoration:none}
+.peringkat .baris a:hover{color:var(--merah);text-decoration:underline}
+.peringkat .no{color:var(--redup);font-variant-numeric:tabular-nums}
+@media(max-width:40rem){.baris,.peringkat .baris{grid-template-columns:1fr 4.5rem}.baris .bar,.peringkat .baris .bar{grid-column:1/-1;order:3}.peringkat .no{display:none}}
+
+.angka-besar{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1.5rem;margin:1.5rem 0}
+.angka-besar div{border-left:3px solid var(--merah);padding-left:.9rem}
+.angka-besar strong{display:block;font-size:1.7rem;line-height:1.2;letter-spacing:-.02em}
+.angka-besar span{color:var(--redup);font-size:.95rem}
+
+.gulir{overflow-x:auto;border:1px solid var(--garis);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{padding:.55rem .8rem;text-align:right;white-space:nowrap;border-bottom:1px solid var(--garis)}
+th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:var(--kertas)}
+th{background:var(--latar);font-weight:600}
+th button{all:unset;cursor:pointer;font-weight:600}
+th button:hover{color:var(--merah)}
+th[aria-sort]{box-shadow:inset 0 -3px 0 var(--merah)}
+tbody tr:hover td{background:var(--merah-muda)}
+
+.status{padding:1rem;border-left:4px solid var(--merah);background:var(--merah-muda);max-width:62ch}
+.istilah dt{font-weight:700;margin-top:1.25rem}
+.istilah dd{margin:0;max-width:62ch}
+.langkah{padding-left:1.25rem;max-width:62ch}
+.langkah li{margin-bottom:.5rem}
+.tautan-aksi{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}
+
+footer{border-top:1px solid var(--garis);padding:1.5rem 0 2.5rem;color:var(--redup);font-size:.95rem}
+footer p{max-width:none;margin:0 0 .25rem}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}

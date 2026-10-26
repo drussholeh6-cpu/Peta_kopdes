@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bandingkan provinsi | Peta Kopdes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-halaman="bandingkan">
+<header class="atas"><div class="wrap">
+<a class="merek" href="index.html">Peta <b>Kopdes</b></a>
+<nav aria-label="Menu utama"><a data-h="beranda" href="index.html">Beranda</a><a data-h="data" href="data.html">Peringkat dan data</a><a data-h="bandingkan" href="bandingkan.html">Bandingkan</a><a data-h="glosarium" href="glosarium.html">Panduan dan istilah</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero">
+<h1>Bandingkan dua provinsi</h1>
+<form id="form" class="pilih">
+<div><label for="a">Provinsi pertama</label><select id="a"></select></div>
+<div><label for="b">Provinsi kedua</label><select id="b"></select></div>
+<button type="submit">Bandingkan</button>
+</form>
+</section>
+<section>
+<p id="simpul" class="lead"></p>
+<div id="kunci" class="kunci"></div>
+<div id="hasil"></div>
+</section>
+</main>
+<footer><div class="wrap">
+<p>Sumber data: <a href="https://simkopdes.go.id/pers/dashboard">Simkopdes</a>, diolah ulang untuk tampilan ini. Bukan publikasi resmi pemerintah.</p>
+<p>Peta Kopdes, Web In Action 2026, subtema Open Government Data.</p>
+</div></footer>
+<script src="app.js"></script>
+</body>
+</html>

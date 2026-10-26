@@ -1,0 +1,8 @@
+{
+  "name": "peta-kopdes",
+  "version": "0.2.0",
+  "description": "Peta Kopdes Merah Putih: data KDKMP per provinsi dalam bahasa warga",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peringkat dan data | Peta Kopdes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-halaman="data">
+<header class="atas"><div class="wrap">
+<a class="merek" href="index.html">Peta <b>Kopdes</b></a>
+<nav aria-label="Menu utama"><a data-h="beranda" href="index.html">Beranda</a><a data-h="data" href="data.html">Peringkat dan data</a><a data-h="bandingkan" href="bandingkan.html">Bandingkan</a><a data-h="glosarium" href="glosarium.html">Panduan dan istilah</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero">
+<h1>Peringkat 38 provinsi</h1>
+<div class="pilih"><div><label for="indikator">Urutkan menurut</label><select id="indikator"></select></div></div>
+<p class="redup" style="margin-top:1rem">Rata-rata nasional <strong id="rata"></strong> (garis hitam di tiap batang). Klik nama provinsi untuk melihat rinciannya.</p>
+<div id="peringkat" class="peringkat"></div>
+</section>
+<section>
+<h2>Data lengkap</h2>
+<p>Klik judul kolom untuk mengurutkan. Persentase NIB, NPWP, dan RAT dihitung dari jumlah koperasi di tiap provinsi.</p>
+<div class="gulir"><table id="tabel"><thead></thead><tbody></tbody></table></div>
+</section>
+<section>
+<h2>Sumber dan unduhan</h2>
+<p>Sumber: <a href="https://simkopdes.go.id/pers/dashboard">Simkopdes</a>. Tanggal data: <span id="tanggal"></span>.</p>
+<p>Catatan: persentase pemetaan lahan mengikuti angka sumber dan tidak selalu sama dengan jumlah lahan dibagi jumlah koperasi. Data hanya sampai tingkat provinsi.</p>
+<div class="tautan-aksi"><a class="tombol" href="/api/unduh.csv">Unduh CSV</a><a class="tombol polos" href="/api/unduh.json">Unduh JSON</a></div>
+</section>
+</main>
+<footer><div class="wrap">
+<p>Sumber data: <a href="https://simkopdes.go.id/pers/dashboard">Simkopdes</a>, diolah ulang untuk tampilan ini. Bukan publikasi resmi pemerintah.</p>
+<p>Peta Kopdes, Web In Action 2026, subtema Open Government Data.</p>
+</div></footer>
+<script src="app.js"></script>
+</body>
+</html>

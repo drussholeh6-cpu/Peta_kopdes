@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peta Kopdes: provinsimu sudah sampai di mana?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-halaman="beranda">
+<header class="atas"><div class="wrap">
+<a class="merek" href="index.html">Peta <b>Kopdes</b></a>
+<nav aria-label="Menu utama"><a data-h="beranda" href="index.html">Beranda</a><a data-h="data" href="data.html">Peringkat dan data</a><a data-h="bandingkan" href="bandingkan.html">Bandingkan</a><a data-h="glosarium" href="glosarium.html">Panduan dan istilah</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero">
+<h1>Provinsimu sudah sampai di mana?</h1>
+<p class="lead">Ada <span id="total">…</span> Koperasi Desa/Kelurahan Merah Putih di 38 provinsi. Pilih provinsimu untuk melihat sudah sejauh apa koperasinya berjalan, dibanding rata-rata nasional.</p>
+<form id="form" class="pilih">
+<div><label for="pilih">Provinsi</label><select id="pilih"></select></div>
+<button type="submit">Lihat provinsi ini</button>
+</form>
+</section>
+<section class="latar" style="margin:0 -1.25rem;padding-left:1.25rem;padding-right:1.25rem">
+<h2>Lima tahap, lima hal berbeda</h2>
+<p>Koperasi yang sudah terbentuk belum tentu sudah berizin, rapat, atau bertransaksi. Di sini tiap tahap dihitung terpisah.</p>
+<ol class="tahap">
+<li><strong>NIB</strong><span>Izin usaha dasar</span></li>
+<li><strong>NPWP</strong><span>Terdaftar sebagai wajib pajak</span></li>
+<li><strong>RAT</strong><span>Rapat anggota tahunan sudah digelar</span></li>
+<li><strong>Lahan</strong><span>Lahan untuk usaha sudah dipetakan</span></li>
+<li><strong>Gerai</strong><span>Bangunan gerai sudah dikerjakan</span></li>
+</ol>
+</section>
+<section>
+<h2>Yang menonjol secara nasional</h2>
+<p class="redup">Dihitung otomatis dari data, tanpa tahap NPWP karena hampir semua koperasi sudah memilikinya.</p>
+<div id="temuan" class="daftar-temuan"></div>
+<div class="tautan-aksi"><a class="tombol polos" href="data.html">Lihat peringkat 38 provinsi</a><a class="tombol polos" href="bandingkan.html">Bandingkan dua provinsi</a></div>
+</section>
+</main>
+<footer><div class="wrap">
+<p>Sumber data: <a href="https://simkopdes.go.id/pers/dashboard">Simkopdes</a>, diolah ulang untuk tampilan ini. Bukan publikasi resmi pemerintah.</p>
+<p>Peta Kopdes, Web In Action 2026, subtema Open Government Data.</p>
+</div></footer>
+<script src="app.js"></script>
+</body>
+</html>
