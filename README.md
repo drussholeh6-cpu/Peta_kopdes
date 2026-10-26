@@ -165,9 +165,10 @@ npm start
 - [x] Halaman panduan/glosarium
 - [x] API lokal untuk data, ringkasan, perbandingan, serta unduhan CSV/JSON
 - [x] Server lokal dapat dijalankan dengan `npm start` di `http://localhost:8000`
+- [x] Tampilan responsif untuk layar ponsel dan tablet
 - [ ] Isi tanggal pengambilan data pada metadata dan tampilkan tanggal yang valid
 - [ ] Peta interaktif dan skor kesiapan
-- [ ] Pengujian visual dan fungsional khusus di HP serta beberapa browser
+- [ ] Pengujian langsung di perangkat HP dan lintas-browser
 
 ## 11. Rencana pengembangan
 
